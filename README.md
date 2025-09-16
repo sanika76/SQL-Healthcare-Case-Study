@@ -48,6 +48,15 @@ SELECT stage, COUNT(*) AS total_patients
 FROM Patients
 GROUP BY stage;
 
+-- 3. Show patients recommended for treatment with confidence > 85
+SELECT p.name, t.treatment_name, wr.confidence_score
+FROM Patients p
+JOIN Watson_Recommendations wr ON p.patient_id = wr.patient_id
+JOIN Treatment_Options t ON wr.treatment_id = t.treatment_id
+WHERE wr.confidence_score > 85;
+
+
+
 ---
 
 ## 🙌 Acknowledgements
@@ -58,9 +67,3 @@ Inspired by **IBM Watson Health** and its efforts to transform cancer care using
 ✨ *Made with SQL for Healthcare Data Analytics* ✨
 
 
--- 3. Show patients recommended for treatment with confidence > 85
-SELECT p.name, t.treatment_name, wr.confidence_score
-FROM Patients p
-JOIN Watson_Recommendations wr ON p.patient_id = wr.patient_id
-JOIN Treatment_Options t ON wr.treatment_id = t.treatment_id
-WHERE wr.confidence_score > 85;

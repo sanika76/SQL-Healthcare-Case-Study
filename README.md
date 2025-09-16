@@ -32,7 +32,7 @@ The project database consists of **5 core tables**:
 ---
 
 ## 📊 ER Diagram
-ER-Diagram.png
+[ER-Diagram.png](ER-Diagram.png) 
 
 
 ---

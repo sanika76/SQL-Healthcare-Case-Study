@@ -32,7 +32,7 @@ The project database consists of **5 core tables**:
 ---
 
 ## 📊 ER Diagram
-https://github.com/sanika76/SQL-Healthcare-Case-Study/blob/main/ER-Diagram.png
+ER-Diagram.png
 
 ---
 

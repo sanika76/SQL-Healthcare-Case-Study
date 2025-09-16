@@ -32,7 +32,7 @@ The project database consists of **5 core tables**:
 ---
 
 ## 📊 ER Diagram
-
+https://github.com/sanika76/SQL-Healthcare-Case-Study/blob/main/ER-Diagram.png
 
 ---
 
@@ -47,6 +47,15 @@ SELECT name, diagnosis FROM Patients;
 SELECT stage, COUNT(*) AS total_patients
 FROM Patients
 GROUP BY stage;
+
+---
+
+## 🙌 Acknowledgements
+Inspired by **IBM Watson Health** and its efforts to transform cancer care using **AI-driven treatment recommendations**.  
+
+---
+
+✨ *Made with SQL for Healthcare Data Analytics* ✨
 
 
 -- 3. Show patients recommended for treatment with confidence > 85
